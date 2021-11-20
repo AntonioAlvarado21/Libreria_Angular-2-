@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: 'libros', loadChildren: () => import('./pages/libros/libros.module').then(m => m.LibrosModule) },
   { path: 'checkout', loadChildren: () => import('./pages/checkout/checkout.module').then(m => m.CheckoutModule) },
   {path: '', redirectTo:'', pathMatch:'full' },
+  { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },
+  { path: 'reporte', loadChildren: () => import('./pages/reporte/reporte.module').then(m => m.ReporteModule) },
   {path: '**', redirectTo:'', pathMatch:'full' }
 ];
 
