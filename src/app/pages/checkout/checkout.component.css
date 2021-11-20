@@ -1,0 +1,50 @@
+body{
+  text-align: center;
+  background-color: rgb(255, 251, 245);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+
+}
+
+h1{
+  text-align: center;
+  color: rgb(66, 4, 66);
+  font-size: xx-large;
+
+}
+
+.item{
+  flex: 1 1 auto;
+
+}
+
+.form{
+  width: 100%;
+}
+
+.form__element{
+  padding: 5px 0px 25px 2px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+}
+
+.container_button{
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+  margin-top: 4 rem;
+}
+
+button{
+  width: 100%;
+}
+
+mat-radio-button{
+  margin-right: 20px;
+  font-size: 20px;
+}

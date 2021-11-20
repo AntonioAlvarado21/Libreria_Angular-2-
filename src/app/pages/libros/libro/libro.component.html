@@ -1,0 +1,20 @@
+<mat-card class="card">
+    <mat-card-header>
+    <mat-card-title>{{libro.titulo}}</mat-card-title>
+    <mat-card-subtitle>{{libro.autor}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <div class="box">
+    <img mat-card-image src={{libro.link}}>
+    </div>
+    <mat-card-content>
+        <h3>{{libro.descripcion}}</h3>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-flat-button color="primary" (click)="onClick()">
+            <mat-icon>book</mat-icon>Ordenar - {{libro.precio | currency}}
+        </button>
+    </mat-card-actions>
+
+</mat-card>

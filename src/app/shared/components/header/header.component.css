@@ -1,0 +1,15 @@
+.uno{
+    vertical-align: center;
+    text-align: center;
+}
+
+.spacer{
+    flex: 1 1 auto;
+    
+}
+
+.mouseHover:hover{
+    background-color:slateblue;
+    cursor: pointer;
+    transition: all 0.7 ease-in-out;
+}

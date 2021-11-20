@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body{
+    text-align: center;
+    background-color: rgb(255, 251, 245);
+}
+
+section.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    color: rgb(45, 23, 105);
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h1::after,h1::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+h1::before{
+    left: -140px;
+}
+
+h1::after{
+    right: -140px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 18px;
+
+}

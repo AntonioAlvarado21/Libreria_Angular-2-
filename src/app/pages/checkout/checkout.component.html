@@ -1,0 +1,74 @@
+<body>
+<div class="container">
+  <form class="form item" #checkoutForm="ngForm">
+
+    <h1>Bienvenido a la sección de pedido!</h1>
+
+    <mat-radio-group class="form__element">
+      {{clienteNuevo}} - Es cliente VIP?
+      <h3>A continuación selecciona el tipo de cliente al que perteneces: </h3>
+      <mat-radio-button value="clienteVIP" (change)="tipoCliente(true)" checked>Cliente VIP</mat-radio-button>
+      <mat-radio-button value="clienteNuevo" (change)="tipoCliente(false)">Cliente Nuevo</mat-radio-button>
+    </mat-radio-group>
+
+    <ng-container *ngIf="clienteNuevo; else showClientes">
+      <mat-form-field class="form__element">
+        <mat-label>Selecciona tu local de encargo </mat-label>
+        <mat-select name="cliente" #cliente="ngModel" [(ngModel)]="model.estado">
+          <mat-option [value]="cliente" *ngFor="let cliente of clientes"> {{cliente.nombre}} - {{cliente.estado}} </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ng-container>
+
+    <ng-template #showClientes>
+      <mat-form-field class="form__element">
+        <input
+          matInput
+          placeholder="Nombre de tienda"
+          [(ngModel)]="model.store"
+          name="store"
+          #store="ngModel"/>
+      </mat-form-field>
+
+      <mat-form-field class="form__element">
+        <input
+          matInput
+          placeholder="Delegacion"
+          [(ngModel)]="model.delegacion"
+          name="delegacion"
+          #delegacion="ngModel"/>
+      </mat-form-field>
+
+      <mat-form-field class="form__element">
+        <input
+          matInput
+          placeholder="Estado"
+          [(ngModel)]="model.estado"
+          name="estado"
+          #estado="ngModel"/>
+      </mat-form-field>
+    </ng-template>
+
+
+  </form>
+</div>
+
+<div class="api">
+  <app-details></app-details>
+</div>
+
+<br><br><br><br>
+<!--Boton de PEDIR-->
+<div class="container_button">
+  <button
+    [disabled]=""
+    mat-raised-button
+    color="primary"
+    type="submit"
+    (click)="onSubmit(checkoutForm)"
+  >
+  Hacer pedido
+  </button>
+</div>
+
+</body>

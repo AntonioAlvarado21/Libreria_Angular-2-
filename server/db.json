@@ -1,0 +1,501 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Libreria Moderna",
+      "ciudad": "Iztacalco",
+      "estado": "CDMX"
+    },
+    {
+      "id": 2,
+      "nombre": "Libreria Alcalá",
+      "ciudad": "Naucalpan de Juarez",
+      "estado": "Estado de Mexico"
+    },
+    {
+      "id": 3,
+      "nombre": "Libreria Morelos",
+      "ciudad": "Amacuzac",
+      "estado": "Morelos"
+    },
+    {
+      "id": 4,
+      "nombre": "Libreria Nueva Era",
+      "ciudad": "Acatlan",
+      "estado": "Hidalgo"
+    },
+    {
+      "id": 5,
+      "nombre": "Libreria Dorada",
+      "ciudad": "Apizaco",
+      "estado": "Tlaxcala"
+    }
+  ],
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "La Vieja Guardia",
+      "autor": "John Scalzi",
+      "precio": 450,
+      "descripcion": "Nos cuenta las aventuras de John Perry, un anciano de 75 años de Ohio que decide enrolarse en las FDC",
+      "stock": 5,
+      "link": "https://www.todoliteratura.es/fotos/1/la_vieja_guardia.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "precio": 200,
+      "descripcion": "El tema principal de la obra 1984 es la libertad. \nEl autor ha inventado un mundo imaginario exagerando algunas cosas para que nos podamos dar cuenta de lo importante que es la libertad.",
+      "stock": 13,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/51rXrmHv51L._SX328_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "El juego de Ender",
+      "autor": "Orson Scott Card",
+      "precio": 300,
+      "descripcion": "Está ambientada en un futuro donde la humanidad se enfrenta al exterminio a manos de una agresiva sociedad extraterrestre conocida como los 'insectores' ",
+      "stock": 5,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/91fqbLUmU0L.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Rayuela",
+      "autor": "Julio Cortazar",
+      "precio": 120,
+      "descripcion": "Narra la historia de Horacio Oliveira, su protagonista, y su relación con «la Maga». La historia pone en juego la subjetividad del lector y tiene múltiples finales.",
+      "stock": 8,
+      "link": "https://www.actualidadliteratura.com/wp-content/uploads/2017/02/An%C3%A1lisis-de-Rayuela-de-Julio-Cort%C3%A1zar.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "La Divina Comedia",
+      "autor": "Dante Alighieri",
+      "precio": 80,
+      "descripcion": "Guiado por el poeta latino Virgilio, Dante recorre en Infierno los nueve círculos concéntricos en los que los condenados expían sus culpas. ",
+      "stock": 12,
+      "link": "https://m.media-amazon.com/images/I/51FBFYOaEZL.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Boulevard",
+      "autor": "Flor M. Salvador",
+      "precio": 40,
+      "descripcion": "Luke y Hasley no eran el prototipo de una pareja perfecta. Sin embargo, ambos le pusieron definición a lo que ellos crearon.\n Una historia de dos adolescentes que crean su propio boulevard ante la llovizna que hay en sus corazones",
+      "stock": 16,
+      "link": "https://http2.mlstatic.com/D_NQ_NP_686623-MLC45759931105_042021-O.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "El esclavo",
+      "autor": "Anad Dilvar",
+      "precio": 100,
+      "descripcion": "Un hombre despierta atrapado en un cuerpo en estado vegetativo, tras un terrible accidente que le ha dejado inmovilizado.\n Incomunicado, comienza una conversación interior que le llevará en un viaje de autorrealización que le provocará un nuevo conocimiento de su yo más profundo.",
+      "stock": 18,
+      "link": "https://www.elsotano.com/imagenes_grandes/9789708/978970807060.JPG"
+    },
+    {
+      "id": 8,
+      "titulo": "El Laberinto de la Soledad",
+      "autor": "Octavio Paz",
+      "precio": 220,
+      "descripcion": "La obra es el reflejo de las preocupaciones de su autor en torno al mexicano, su psicología y su moralidad: el autor busca cuáles son los orígenes y las causas del comportamiento del mexicano tanto individualmente como en lo colectivo.",
+      "stock": 6,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/41q24zherHL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "Pedro Paramo",
+      "autor": "Juan Rulfo",
+      "precio": 340,
+      "descripcion": "El argumento de la novela se sitúa en la época de la Guerra Cristera y narra dos historias: la de un hombre llamado Juan Preciado, quien llega al pueblo de Comala en busca de su padre, Pedro Páramo, y la historia de este, un cacique que con el tiempo se corrompió por el poder que le generó la Revolución.",
+      "stock": 9,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/81uU0hkYqxL.jpg"
+    },
+    {
+      "id": 10,
+      "titulo": "El Principito",
+      "autor": "Antoine de Saint-Exupery",
+      "precio": 50,
+      "descripcion": "Un piloto se encuentra perdido en el desierto del Sahara después de que su avión sufriera una avería, pero para su sorpresa, es allí donde conoce a un pequeño príncipe proveniente de otro planeta. ",
+      "stock": 2,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/51hyi0j5BJL.jpg"
+    },
+    {
+      "id": 11,
+      "titulo": "Cuentos para pensar",
+      "autor": "Jorge Bucay",
+      "precio": 410,
+      "descripcion": "Su objetivo es crear un vínculo con el lector en el que el cuento se convierta en un lazo único con el escritor.",
+      "stock": 20,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/71CiaYaxUoL.jpg"
+    },
+    {
+      "id": 12,
+      "titulo": "Crepusculo",
+      "autor": "Stephenie Meyer",
+      "precio": 600,
+      "descripcion": "Bella Swan se va a vivir con su padre al pequeño pueblo de Forks, donde conoce a Edward, un atractivo y misterioso chico del que se enamora y quien esconde un gran secreto: es un vampiro. ",
+      "stock": 20,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/41ATN7ABTVL._SX342_SY445_QL70_ML2_.jpg"
+    },
+    {
+      "id": 13,
+      "titulo": "El Gato Negro",
+      "autor": "Edgar Allan Poe",
+      "precio": 30,
+      "descripcion": "Un joven matrimonio lleva una vida hogareña, apacible con su gato llamado Pluto, hasta que el joven empieza a dejarse arrastrar por la bebida.\n El alcohol lo vuelve irascible y en uno de sus accesos de furia acaba con la vida del animal después de arrancarle un ojo.",
+      "stock": 16,
+      "link": "https://m.media-amazon.com/images/I/41W3WKLzqeL.jpg"
+    },
+    {
+      "id": 14,
+      "titulo": "Francesco",
+      "autor": "Yohana Garcia",
+      "precio": 310,
+      "descripcion": "Tras sufrir una larga enfermedad, el espíritu de Francesco se desprende de su cuerpo y llega a un lugar desconocido. Muy pronto comprende que ha muerto y está en el cielo.",
+      "stock": 7,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/51B3DFYZ%2BPL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 15,
+      "titulo": "GOG",
+      "autor": "Giovanni Papini",
+      "precio": 300,
+      "descripcion": "El narrador describe el encuentro en un manicomio con un supuesto multimillonario hawaiano, Gog, que relata sus experiencias al viajar por el mundo. ",
+      "stock": 10,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/41DShji4h6L.jpg"
+    },
+    {
+      "id": 16,
+      "titulo": "El Libro Negro",
+      "autor": "Giovanni Papini",
+      "precio": 280,
+      "descripcion": "En esta continuación de Gog, Papini, a través de su personaje, viaja por todo el mundo y tiene entrevistas con celebridades contemporáneas, pintando el negro panorama que titula su obra, escrita en la Italia de postguerra.",
+      "stock": 6,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/71hlx5I-SbL.jpg"
+    },
+    {
+      "id": 17,
+      "titulo": "La tercera ola",
+      "autor": "Alvin Toffler",
+      "precio": 500,
+      "descripcion": "Con aire futurista, se basa en la historia de la humanidad para describir la configuración que tomará el mundo una vez superada la era industrial, lo que significa a la vez la superación de las ideologías, modelos de gobierno, economía, comunicaciones y sociedades",
+      "stock": 16,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/81f2UXs7TLL.jpg"
+    },
+    {
+      "id": 18,
+      "titulo": "El psicoanalista",
+      "autor": "John Katzenbach",
+      "precio": 610,
+      "descripcion": "La historia, que pone a prueba la capacidad del protagonista para evitar su suicidio frente a la presión de un desconocido, destaca por el realismo psicológico de sus personajes y la capacidad de establecer una trama intrigante.",
+      "stock": 5,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/91-ELvEEeIL.jpg"
+    },
+    {
+      "id": 19,
+      "titulo": "La Voz del Fuego",
+      "autor": "Alan Moore",
+      "precio": 300,
+      "descripcion": "En esta historia llena de lujuria, locura y éxtasis, habitan doce personajes distintivos que vivieron en la misma región del centro de Inglaterra durante un período de seis mil años. ",
+      "stock": 14,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/71MmOXx815L.jpg"
+    },
+    {
+      "id": 20,
+      "titulo": "El Alquimista",
+      "autor": "Paulo Coelho",
+      "precio": 280,
+      "descripcion": "Rica, evocadora y profundamente humana, la historia de Santiago es un testimonio eterno de la fuerza transformadora de nuestros sueños y de la importancia de escuchar a nuestros corazones.",
+      "stock": 4,
+      "link": "https://images-na.ssl-images-amazon.com/images/I/71Y+zLnZJuL.jpg"
+    }
+  ],
+  "ordenes": [
+    {
+      "nombre": "Libreria Moderna",
+      "ciudad": "Iztacalco",
+      "estado": "CDMX",
+      "fecha": "17/11/2021",
+      "disponible": true,
+      "id": 1
+    },
+    {
+      "cliente": false,
+      "id": 2
+    },
+    {
+      "cliente": false,
+      "id": 3
+    },
+    {
+      "store": "Prueba",
+      "delegacion": "Uno",
+      "estado": "Dos",
+      "cliente": true,
+      "id": 4
+    },
+    {
+      "cliente": false,
+      "id": 5
+    },
+    {
+      "cliente": false,
+      "id": 6
+    },
+    {
+      "cliente": {
+        "id": 2,
+        "nombre": "Libreria Alcalá",
+        "ciudad": "Naucalpan de Juarez",
+        "estado": "Estado de Mexico"
+      },
+      "fecha": "19/11/2021",
+      "id": 7
+    },
+    {
+      "cliente": {
+        "id": 5,
+        "nombre": "Libreria Dorada",
+        "ciudad": "Apizaco",
+        "estado": "Tlaxcala"
+      },
+      "fecha": "19/11/2021",
+      "id": 8
+    },
+    {
+      "cliente": {
+        "id": 4,
+        "nombre": "Libreria Nueva Era",
+        "ciudad": "Acatlan",
+        "estado": "Hidalgo"
+      },
+      "fecha": "19/11/2021",
+      "id": 9
+    },
+    {
+      "store": "Prueba",
+      "delegacion": "Dos",
+      "estado": "Tres",
+      "fecha": "19/11/2021",
+      "id": 10
+    },
+    {
+      "cliente": {
+        "id": 2,
+        "nombre": "Libreria Alcalá",
+        "ciudad": "Naucalpan de Juarez",
+        "estado": "Estado de Mexico"
+      },
+      "fecha": "19/11/2021",
+      "id": 11
+    },
+    {
+      "cliente": {
+        "id": 5,
+        "nombre": "Libreria Dorada",
+        "ciudad": "Apizaco",
+        "estado": "Tlaxcala"
+      },
+      "fecha": "19/11/2021",
+      "id": 12
+    },
+    {
+      "cliente": {
+        "id": 2,
+        "nombre": "Libreria Alcalá",
+        "ciudad": "Naucalpan de Juarez",
+        "estado": "Estado de Mexico"
+      },
+      "fecha": "19/11/2021",
+      "id": 13
+    },
+    {
+      "cliente": {
+        "id": 3,
+        "nombre": "Libreria Morelos",
+        "ciudad": "Amacuzac",
+        "estado": "Morelos"
+      },
+      "fecha": "20/11/2021",
+      "id": 14
+    },
+    {
+      "cliente": {
+        "id": 4,
+        "nombre": "Libreria Nueva Era",
+        "ciudad": "Acatlan",
+        "estado": "Hidalgo"
+      },
+      "fecha": "20/11/2021",
+      "id": 15
+    },
+    {
+      "cliente": {
+        "id": 5,
+        "nombre": "Libreria Dorada",
+        "ciudad": "Apizaco",
+        "estado": "Tlaxcala"
+      },
+      "fecha": "20/11/2021",
+      "id": 16
+    }
+  ],
+  "detailsOrders": [
+    {
+      "details": [
+        {
+          "id": 1,
+          "orderId": 1,
+          "cantidad": 2,
+          "libro": "El Alquimista"
+        }
+      ],
+      "orderId": 1,
+      "id": 2
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "La Vieja Guardia",
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "productName": "1984",
+          "quantity": 1
+        }
+      ],
+      "orderId": 2,
+      "id": 3
+    },
+    {
+      "details": [
+        {
+          "productId": 2,
+          "productName": "1984",
+          "quantity": 2
+        },
+        {
+          "productId": 5,
+          "productName": "La Divina Comedia",
+          "quantity": 1
+        }
+      ],
+      "orderId": 3,
+      "id": 4
+    },
+    {
+      "details": [
+        {
+          "productId": 2,
+          "productName": "1984",
+          "quantity": 2
+        },
+        {
+          "productId": 5,
+          "productName": "La Divina Comedia",
+          "quantity": 1
+        }
+      ],
+      "orderId": 4,
+      "id": 5
+    },
+    {
+      "details": [
+        {
+          "productId": 20,
+          "productName": "El Alquimista",
+          "quantity": 2
+        }
+      ],
+      "orderId": 5,
+      "id": 6
+    },
+    {
+      "details": [],
+      "orderId": 6,
+      "id": 7
+    },
+    {
+      "details": [
+        {
+          "productId": 2,
+          "productName": "1984",
+          "quantity": 1
+        }
+      ],
+      "orderId": 7,
+      "id": 8
+    },
+    {
+      "details": [
+        {
+          "productId": 5,
+          "productName": "La Divina Comedia",
+          "quantity": 2
+        }
+      ],
+      "id": 9
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "La Vieja Guardia",
+          "quantity": 1
+        }
+      ],
+      "id": 10
+    },
+    {
+      "details": [
+        {
+          "productId": 11,
+          "productName": "Cuentos para pensar",
+          "quantity": 1
+        }
+      ],
+      "id": 11
+    },
+    {
+      "details": [
+        {
+          "productId": 11,
+          "productName": "Cuentos para pensar",
+          "quantity": 1
+        }
+      ],
+      "id": 12
+    },
+    {
+      "details": [
+        {
+          "productId": 11,
+          "productName": "Cuentos para pensar",
+          "quantity": 2
+        }
+      ],
+      "id": 13
+    },
+    {
+      "details": [],
+      "id": 14
+    },
+    {
+      "details": [],
+      "id": 15
+    },
+    {
+      "details": [],
+      "id": 16
+    },
+    {
+      "details": [],
+      "id": 17
+    }
+  ]
+}
