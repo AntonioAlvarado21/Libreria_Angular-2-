@@ -41,6 +41,17 @@ body{
   color: navy;
 }
 
+.controls2{
+  width: 100%;
+  border: 1px solid blue;
+  margin-bottom: 20px;
+  padding: 11px 10px;
+  background: rgb(194, 187, 177);
+  font-size: 14px;
+  font-weight: bold;
+  color: navy;
+}
+
 .buttons{
   width: 100%;
   height: 40px;

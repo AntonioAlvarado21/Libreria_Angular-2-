@@ -10,14 +10,27 @@ import { ShoppingCartService } from 'src/app/shared/components/header/services/s
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router, private shoppingCartSvc:ShoppingCartService) { }
+  usuario!:string;
+  password!:string;
+
+  constructor(private router:Router, private shoppingCartSvc:ShoppingCartService) {
+
+  }
 
   ngOnInit(): void {
   }
 
-  //validacion(){
+  login(){
+    if(this.usuario==="jorge" && this.password==="1234")
+    {
+      this.onSubmit();
+    }else{
+      alert("Datos incorrectos");
+      location.reload();
+    }
 
-  //}
+  }
+
 
   onCancel(){
     this.router.navigate(['/']),

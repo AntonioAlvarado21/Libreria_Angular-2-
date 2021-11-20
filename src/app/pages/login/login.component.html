@@ -1,11 +1,26 @@
 <body>
 
   <section class="form-login">
+    <form action="custom-form" method="post">
     <h4>Formulario Login </h4>
-    <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-    <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-    <input class="buttons" type="submit" (click)="onSubmit()" name="" value="Ingresar">
-    <input class="buttons" type="submit" (click)="onCancel()" name="" value="Cancelar">
-  </section>
+    <input class="controls"
+    type="text"
+    [(ngModel)]="usuario"
+    name="usuario"
+    placeholder="Usuario"
+    required="required"/>
 
+    <input class="controls2"
+    type="password"
+    [(ngModel)]="password"
+    name="contrasena"
+    placeholder="Contraseña"
+    required="required"/>
+
+    <input class="buttons" type="submit" (click)="login()" id="guardar" value="Ingresar">
+
+    <!--Funciona bien-->
+    <input class="buttons" type="submit" (click)="onCancel()" name="" value="Cancelar">
+    </form>
+  </section>
   </body>
