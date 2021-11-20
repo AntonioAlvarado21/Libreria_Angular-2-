@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
+import { Libro } from "src/app/pages/libros/interface/libro.interface";
 import { Cliente } from "../interfaces/clientes.interface";
 import { DetailsOrder, Ordenes } from "../interfaces/ordenes.interface";
 
@@ -22,6 +23,10 @@ export class DataService{
 
   saveDetailsOrder(details:DetailsOrder):Observable<DetailsOrder>{
     return this.http.post<DetailsOrder>(`${this.apiURL}/detailsOrders`,details);
+  }
+
+  getReportes():Observable<Libro[]>{
+    return this.http.get<Libro[]>(`${this.apiURL}/libros`)
   }
 
 }
