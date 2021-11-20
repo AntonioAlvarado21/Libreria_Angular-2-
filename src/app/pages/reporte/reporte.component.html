@@ -1,9 +1,11 @@
+<body>
 <div class="container__table">
   <table class="table">
+    <caption><b>REPORTE DE STOCK DE LIBROS</b></caption>
     <thead>
       <tr>
-        <th>ID_LIBRO</th>
-        <th>NOMBRE_LIBRO</th>
+        <th>ID LIBRO</th>
+        <th>NOMBRE LIBRO</th>
         <th>STOCK</th>
         <th>ENCARGO A FABRICA</th>
       </tr>
@@ -14,10 +16,11 @@
         <td>{{item.id}}</td>
         <td>{{item.titulo}}</td>
         <td>{{item.stock}}</td>
-        <td>{{20 - item.stock}}</td>
+        <td><b>{{20 - item.stock}}</b></td>
       </tr>
     </tbody>
 
 
   </table>
 </div>
+</body>

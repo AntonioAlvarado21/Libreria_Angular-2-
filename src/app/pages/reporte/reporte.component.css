@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(228, 228, 228);
+}
+
+caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side:top;
+  color: rgb(0, 0, 82);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+table{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(206, 8, 206);
+}
+
+thead{
+  background-color: rgb(10, 18, 134);
+  text-shadow: 0 0.5px rgb(74, 231, 255);
+  text-align: center;
+  color: aliceblue;
+}
+
+tbody{
+  text-align: center;
+}
+
+
+
+td{
+  border: 2px solid rgb(20, 0, 39);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(156, 175, 226);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #c7afc7;
+}
